@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-light: #F1D592;
+  --color-gold-dark: #996515;
+  
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black antialiased;
+    font-size: 18px; /* Larger base font for accessibility */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+.bg-premium-black {
+  background-color: #0A0A0A;
+}
+
+.text-gold {
+  color: #D4AF37;
+}
+
+.border-gold {
+  border-color: #D4AF37;
+}
+
+.btn-gold {
+  @apply bg-gold text-black px-6 py-3 rounded-md font-bold transition-all hover:bg-gold-light active:scale-95 flex items-center justify-center gap-2;
+}
+
+.btn-outline-gold {
+  @apply border-2 border-gold text-gold px-6 py-3 rounded-md font-bold transition-all hover:bg-gold hover:text-black active:scale-95 flex items-center justify-center gap-2;
+}
+
+/* Accessibility: Focus states */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-gold;
+}

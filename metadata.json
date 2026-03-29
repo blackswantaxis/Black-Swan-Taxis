@@ -1,0 +1,7 @@
+{
+  "name": "Black Swan Wheelchair Taxis",
+  "description": "Premium wheelchair taxi and NDIS transport services in Perth, Western Australia. Specialising in airport transfers, hospital transport, and accessible travel.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
